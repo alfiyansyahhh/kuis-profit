@@ -1,0 +1,25 @@
+
+var sum = 0;
+var numbers = [99, 66, 33, 111];
+function myFunction(item) {
+    sum += item;
+    hasil.innerHTML = sum;
+}
+
+
+const findHighestProfit = (price) => {
+    for(var i=0; i<price.length;i++){    
+        if(i == 0){ 
+            var awal = price[i];
+            var hasil = 0
+        } else {
+            if(awal < price[i]) {
+                    hasil = awal + price[i];
+                }
+            }              
+        }  
+
+    return hasil
+}
+
+console.log(findHighestProfit([10,2,11,20,3,5]))
